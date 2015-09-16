@@ -1,6 +1,12 @@
 # CurrencyQuotationConverter
 Convert currency according to CVS file from Banco Central
 
+Simplismente execute este arquivo para rodar o programa.
+..\CurrencyConverterApplication\bin\Debug\CurrencyConverterApplication.exe
+
+Ou faça o download da aplicação e abra do Visual Studio para ver o código fonte.
+Desenvolvido no Visual Studio 2013 Professional
+
 1. O programa recebe os 4 parâmetros.
 2. Valida a entrada de dados.
 3. Busca no http://www4.bcb.gov.br/Download/fechamento/20150915.csv (ano, mês, dia).
