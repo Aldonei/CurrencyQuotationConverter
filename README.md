@@ -15,21 +15,18 @@ Where:
 4. quotation: A date as String in the format “dd/MM/yyyy”;
 
 Restrictions:
-! You shall not work with non-native classes / libraries;
-! If the from or to parameters are not valid, an exception must be thrown;
-! If the value is smaller than zero, an exception must be thrown;
-! For non-working days (Saturday and Sunday, ignoring holidays) takes the quotation from the
-immediately preceding business day. If the quotation of the previous day is not available, an
-exception must be thrown;
-! If the quotation date is not available, an exception must be thrown;
-! The data source used will be the Brazilian central bank CSV file available at:
+1. You shall not work with non-native classes / libraries;
+2. If the from or to parameters are not valid, an exception must be thrown;
+3. If the value is smaller than zero, an exception must be thrown;
+4. For non-working days (Saturday and Sunday, ignoring holidays) takes the quotation from the immediately preceding business day. If the quotation of the previous day is not available, an exception must be thrown;
+5. If the quotation date is not available, an exception must be thrown;
+6. The data source used will be the Brazilian central bank CSV file available at:
 http://www4.bcb.gov.br/pec/taxas/batch/cotacaomoedas.asp?id=txtodas
-! The return value should be rounded to two decimal places.
-! You must convert the currency through rate "Taxa Compra".
+7. The return value should be rounded to two decimal places. 
+8. You must convert the currency through rate "Taxa Compra".
+
 Example:
 currencyQuotation("USD", "EUR", 100.00, "20/11/2014") = 79.69
 Data source:
-…
 20/11/2014 – 220 – A – USD - 2,54400000
-…
 20/11/2014 - 978 - B - EUR - 3,19170000
