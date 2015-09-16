@@ -11,9 +11,9 @@ public BigDecimal currencyQuotation(String from, String to, Number value, String
 Where:
 1. from: String with the currency name (example "USD") you want to convert;
 2. to: String with the currency name (example "EUR") you want to see the result;
-3. value: The value that should be converted. The currency of this value will be expressed in the
-“from” parameter;
-! quotation: A date as String in the format “dd/MM/yyyy”;
+3. value: The value that should be converted. The currency of this value will be expressed in the “from” parameter;
+4. quotation: A date as String in the format “dd/MM/yyyy”;
+
 Restrictions:
 ! You shall not work with non-native classes / libraries;
 ! If the from or to parameters are not valid, an exception must be thrown;
