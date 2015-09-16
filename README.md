@@ -7,4 +7,5 @@ Convert currency according to CVS file from Banco Central
 4. Varre o arquivo CSV procurando pelo valor da variável FROM e TO e seus respectivos valores no campo Taxa Compra.
 5. Divide o valor FROM pelo valor TO e multiplica pela variável VALUE e obtem o valor da Cotação daquele dia.
 
+Enunciado.
 public BigDecimal currencyQuotation(String from, String to, Number value, String quotation);
